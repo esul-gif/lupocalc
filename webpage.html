@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Interactive Calculator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+<div id="frame">
+    <h2>Interaculator</h2>
+    <div id="content">
+        <input id='input1'onchange="displayInput()">
+        <button onclick="calc.add()">+</button>
+        <button onclick="calc.subtract()">–</button>
+        <button onclick="calc.multiply()">×</button>
+        <button onclick="calc.divide()">÷</button>
+        <input id="input2" onchange="againDisplayInput()">
+        <div>
+            <button onclick="calc.show()">=</button>
+            <div id="answer">Answer Will Go Here</div>
+            <img id="lupo" src="lupo.jpg">
+        </div>
+    </div>
+</div>
+<script src="calc.js"></script>
+</body>
+</html>
