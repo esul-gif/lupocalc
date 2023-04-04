@@ -28,8 +28,27 @@ input {
      width: 20px;
      height: auto;
 }
-
-#lupo {
-    width: 100%;
-    display: none;
+#speech {
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: 20px;
 }
+#lupo {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 15px
+
+}
+
+#speech > img {
+    width: 130%
+}
+
+#answer1 {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 10px
+  }

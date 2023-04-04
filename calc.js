@@ -1,16 +1,12 @@
 const input = document.getElementById('input1')
 const input2 = document.getElementById('input2')
-const ansBox = document.getElementById('answer')
-
 let butt = document.querySelectorAll('button')
-
+const ansBox1 = document.getElementById('answer1')
 
 butt.forEach(item => {item.addEventListener("click", event => {
     
     console.log('clicked');
 })})
-
-
 
 class calculator {
     constructor(ans) {
@@ -31,8 +27,9 @@ class calculator {
         this.ans = parseInt(input.value) / parseInt(input2.value);
     }
     show() {
-        ansBox.innerHTML = this.ans;
-        document.getElementById('lupo').style.display = 'block'
+        ansBox1.innerHTML = this.ans;
+        ansBox1.style.left = '35%'
+        ansBox1.style.fontSize = '25px'
     }
     clear() {
         this.ans = 0;
@@ -40,12 +37,7 @@ class calculator {
     }
 }
 
-
 let calc = new calculator(0)
-
-if (calc.ans == NaN) {
-    console.log('lupo')
-}
 
 function displayInput() {
     console.log(input.value)
